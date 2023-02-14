@@ -1,0 +1,16 @@
+{
+   "background": {
+      "service_worker": "deskpotify.js"
+   },
+   "description": "Search selected text in Spotify Desktop app.",
+   "icons": {
+      "16": "deskpotify16.png",
+      "32": "deskpotify32.png",
+      "48": "deskpotify48.png",
+      "128": "deskpotify128.png"
+   },
+   "manifest_version": 3,
+   "name": "Deskpotify: Search in Spotify Desktop App",
+   "permissions": [ "contextMenus" ],
+   "version": "1.1.0"
+}
