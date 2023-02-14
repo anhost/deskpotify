@@ -1,4 +1,3 @@
-// JavaScript Document
 var menuItem = chrome.contextMenus.create({
 		"id": "anhspsrch",
 		"title": "Deskpotify: '%s'",
