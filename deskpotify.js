@@ -5,9 +5,12 @@ var menuItem = chrome.contextMenus.create({
 	});
 	
 function searchOnClick(info, tab){
-	var targetURL = "spotify:search:" + info.selectionText;
+	searchArgs = info.selectionText
+		.replace("\t", " ")
+		.replace(/[^\p{L}\p{N} .]+/gu, "")
+		.replace("  ", " ");
+	var targetURL = "spotify:search:" + searchArgs;
 	chrome.tabs.update(tab.id,{"url":targetURL});
 }
 
 chrome.contextMenus.onClicked.addListener(searchOnClick);
-
