@@ -2,7 +2,7 @@
    "background": {
       "service_worker": "deskpotify.js"
    },
-   "description": "Search selected text in Spotify Desktop app.",
+   "description": "Use the right-click menu to search for the selected text in the Spotify desktop application.",
    "icons": {
       "16": "deskpotify16.png",
       "32": "deskpotify32.png",
@@ -12,5 +12,5 @@
    "manifest_version": 3,
    "name": "Deskpotify: Search in Spotify Desktop App",
    "permissions": [ "contextMenus" ],
-   "version": "1.1.2"
+   "version": "1.1.4"
 }
